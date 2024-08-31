@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Playlist" />
+    <item
+        android:id="@+id/navigation_song"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Song" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@android:drawable/btn_radio"
+        android:title="Account" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings" />
+
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppMusic"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.LikedSongsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuanLyBaiHat"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuanLyUser"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditPlayListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddPlaylistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuanLyPlaylis"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PlaynhacActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DanhsachtatcaAlbumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DanhsachtheloaitheochudeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DanhsachtatcachudeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DanhsachcacplaylistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DanhsachbaihatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginAppMusicActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.RegisterAppMusicActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

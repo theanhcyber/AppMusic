@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:padding="8dp"
+    android:background="@drawable/layout_border">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/manageimage_song"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true" />
+
+    <!-- Container for TextViews -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/manageimage_song"
+        android:layout_marginStart="8dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Song title -->
+        <TextView
+            android:id="@+id/text_titlesong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:textStyle="bold"
+            android:textColor="#0D1F40"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Song category -->
+        <TextView
+            android:id="@+id/text_codeSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: "
+            android:textColor="#707070"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Song artist -->
+        <TextView
+            android:id="@+id/text_artistsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist: "
+            android:textColor="#707070"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Song feedback -->
+        <TextView
+            android:id="@+id/text_feedbacksong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback: "
+            android:textColor="#707070"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Edit button -->
+    <ImageButton
+        android:id="@+id/button_editsongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_edit"
+        app:tint="#0D1F40" />
+
+    <!-- Delete button -->
+    <ImageButton
+        android:id="@+id/button_deletesongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/button_editsongs"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_delete"
+        app:tint="#0D1F40" />
+
+</RelativeLayout>

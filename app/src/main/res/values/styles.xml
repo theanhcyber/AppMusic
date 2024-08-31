@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="homeAsUpIndicator">@drawable/iconback</item>
+    </style>
+
+    <!-- Custom style for the back arrow -->
+    <style name="ToolbarBackArrow">
+        <item name="android:layout_width">24dp</item> <!-- Adjust width as needed -->
+        <item name="android:layout_height">24dp</item> <!-- Adjust height as needed -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
